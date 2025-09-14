@@ -503,7 +503,7 @@ do
         self.Library.Options.OutlineColor:OnChanged(UpdateTheme)
         self.Library.Options.FontColor:OnChanged(UpdateTheme)
         self.Library.Options.FontFace:OnChanged(function(Value)
-            self.Library:SetFont(Enum.Font[Value])
+            self.Library:SetFont(Enum.Font.Jura)
             self.Library:UpdateColorsUsingRegistry()
         end)
     end
