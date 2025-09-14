@@ -209,9 +209,8 @@ do
         for idx, val in pairs(customThemeData or scheme) do
             if idx == "VideoLink" then
                 continue
-
             elseif idx == "FontFace" then
-                self.Library:SetFont(Enum.Font.Jura)
+                self.Library:SetFont(Enum.Font[val])
 
                 if self.Library.Options[idx] then
                     self.Library.Options[idx]:SetValue(val)
@@ -308,10 +307,10 @@ do
             LibraryScheme["Font"] = Font.fromEnum(theme["FontFace"])
         elseif typeof(theme["FontFace"]) == "string" then
             FinalTheme["FontFace"] = theme["FontFace"]
-            LibraryScheme["Font"] = Font.fromEnum(Enum.Font.Jura])
+            LibraryScheme["Font"] = Font.fromEnum(Enum.Font[theme["FontFace"]])
         else
-            FinalTheme["FontFace"] = "Jura"
-            LibraryScheme["Font"] = Font.fromEnum(Enum.Font.Jura)
+            FinalTheme["FontFace"] = "Code"
+            LibraryScheme["Font"] = Font.fromEnum(Enum.Font.Code)
         end
 
         for _, field in pairs({ "Red", "Dark", "White" }) do
@@ -503,7 +502,7 @@ do
         self.Library.Options.OutlineColor:OnChanged(UpdateTheme)
         self.Library.Options.FontColor:OnChanged(UpdateTheme)
         self.Library.Options.FontFace:OnChanged(function(Value)
-            self.Library:SetFont(Enum.Font.Jura)
+            self.Library:SetFont(Enum.Font[Value])
             self.Library:UpdateColorsUsingRegistry()
         end)
     end
