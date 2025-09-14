@@ -74,14 +74,14 @@ local Library = {
 
     MinSize = Vector2.new(480, 360),
     DPIScale = 1,
-    CornerRadius = 4,
+    CornerRadius = 5,
 
     IsLightTheme = false,
     Scheme = {
         BackgroundColor = Color3.fromRGB(15, 15, 15),
         MainColor = Color3.fromRGB(25, 25, 25),
         AccentColor = Color3.fromRGB(255, 145, 0),
-        OutlineColor = Color3.fromRGB(40, 40, 40),
+        OutlineColor = Color3.fromRGB(255, 145, 0),
         FontColor = Color3.new(1, 1, 1),
         Font = Font.fromEnum(Enum.Font.Code),
 
@@ -112,7 +112,7 @@ local ObsidianImageManager = {
     }
 }
 do
-    local BaseURL = "https://raw.githubusercontent.com/deividcomsono/Obsidian/refs/heads/main/"
+    local BaseURL = "https://raw.githubusercontent.com/SylaHub/Obsidian/refs/heads/main/"
 
     local function RecursiveCreatePath(Path: string, IsFile: boolean?)
         if not isfolder or not makefolder then return end
@@ -247,7 +247,7 @@ local Templates = {
         Footer = "No Footer",
         Position = UDim2.fromOffset(6, 6),
         Size = UDim2.fromOffset(720, 600),
-        IconSize = UDim2.fromOffset(30, 30),
+        IconSize = UDim2.fromOffset(40, 40),
         AutoShow = true,
         Center = true,
         Resizable = true,
