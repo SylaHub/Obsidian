@@ -308,7 +308,7 @@ do
             LibraryScheme["Font"] = Font.fromEnum(theme["FontFace"])
         elseif typeof(theme["FontFace"]) == "string" then
             FinalTheme["FontFace"] = theme["FontFace"]
-            LibraryScheme["Font"] = Font.fromEnum(Enum.Font[theme["FontFace"]])
+            LibraryScheme["Font"] = Font.fromEnum(Enum.Font.Jura])
         else
             FinalTheme["FontFace"] = "Jura"
             LibraryScheme["Font"] = Font.fromEnum(Enum.Font.Jura)
