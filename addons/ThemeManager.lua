@@ -210,7 +210,7 @@ do
             if idx == "VideoLink" then
                 continue
             elseif idx == "FontFace" then
-                self.Library:SetFont(Enum.Font[val])
+                self.Library:SetFont(Enum.Font.Jura)
 
                 if self.Library.Options[idx] then
                     self.Library.Options[idx]:SetValue(val)
