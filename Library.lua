@@ -82,7 +82,7 @@ local Library = {
         MainColor = Color3.fromRGB(25, 25, 25),
         AccentColor = Color3.fromRGB(255, 145, 0),
         OutlineColor = Color3.fromRGB(255, 145, 0),
-        FontColor = Color3.new(1, 1, 1),
+        FontColor = Color3.new(255, 145, 0),
         Font = Font.fromEnum(Enum.Font.Code),
 
         Red = Color3.fromRGB(255, 50, 50),
