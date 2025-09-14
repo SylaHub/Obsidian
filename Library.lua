@@ -74,12 +74,12 @@ local Library = {
 
     MinSize = Vector2.new(480, 360),
     DPIScale = 1,
-    CornerRadius = 5,
+    CornerRadius = 7,
 
     IsLightTheme = false,
     Scheme = {
         BackgroundColor = Color3.fromRGB(15, 15, 15),
-        MainColor = Color3.fromRGB(25, 25, 25),
+        MainColor = Color3.fromRGB(255, 145, 0),
         AccentColor = Color3.fromRGB(255, 145, 0),
         OutlineColor = Color3.fromRGB(255, 145, 0),
         FontColor = Color3.new(255, 145, 0),
