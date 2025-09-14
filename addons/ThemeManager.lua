@@ -209,6 +209,7 @@ do
         for idx, val in pairs(customThemeData or scheme) do
             if idx == "VideoLink" then
                 continue
+
             elseif idx == "FontFace" then
                 self.Library:SetFont(Enum.Font.Jura)
 
@@ -309,8 +310,8 @@ do
             FinalTheme["FontFace"] = theme["FontFace"]
             LibraryScheme["Font"] = Font.fromEnum(Enum.Font[theme["FontFace"]])
         else
-            FinalTheme["FontFace"] = "Code"
-            LibraryScheme["Font"] = Font.fromEnum(Enum.Font.Code)
+            FinalTheme["FontFace"] = "Jura"
+            LibraryScheme["Font"] = Font.fromEnum(Enum.Font.Jura)
         end
 
         for _, field in pairs({ "Red", "Dark", "White" }) do
